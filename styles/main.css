@@ -581,3 +581,40 @@ html {
 .novelties-item-bg-white {
     background: #fff;
 }
+
+/* 93 с отступом в 32 от верха, низ 225*/
+
+.blog-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 225px;
+    grid-template-areas:
+        "te te te te te te te te te te br br"
+        "so so so so so so st st st st st st";
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+
+.blog__title {
+    grid-area: te;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.blog__buttons-mr0 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.blog__buttons-container {
+    grid-area: br;
+}
+
+.blog__story-wrapper1 {
+    grid-area: so;
+}
+
+.blog__story-wrapper2 {
+    grid-area: st;
+}
