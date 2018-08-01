@@ -3,3 +3,243 @@ body,
 html {
     font-family: "OpenSans", sans-serif; 
 }
+
+.container {
+   width: 1240px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto; 
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 100px 50px;
+    grid-template-areas:
+        "cy cy pe pe te te pm pm pm pm ln ln"
+        "lo lo lo sh sh sh sh sh os os os os"
+        "cg cg cg cg cg cg cg cs cs cs cs cs";
+}
+
+.header-city {
+    grid-area: cy;
+}
+
+.header-phone {
+    grid-area: pe;
+}
+
+.header-time {
+    grid-area: te;
+}
+
+.header-problem {
+    grid-area: pm;
+}
+
+.header-login {
+    grid-area: ln;
+}
+
+.header-logo {
+    grid-area: lo;
+}
+
+.header-search {
+    grid-area: sh;
+}
+
+.header-options {
+    grid-area: os;
+}
+
+.header-catalog {
+    grid-area: cg;
+}
+
+.header-conditions {
+    grid-area: cs;
+}
+
+.header-city,
+.header-phone,
+.header-time,
+.header-problem,
+.header-login,
+.header-logo,
+.header-search,
+.header-options,
+.header-catalog,
+.header-conditions {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: #e1e2e8 1px solid;
+}
+
+.header-city__image-arrow {
+    width: 15px;
+}
+
+.header-city__title-city {
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.header-city__link-chosen-city {
+    font-weight: 400;
+    text-decoration: underline;
+    color: #afafaf;
+    padding-left: 10px;
+}
+
+.header-phone__image-phone {
+    width: 15px;
+}
+
+.header-phone__span-number {
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.header-time__image-clock {
+    width: 15px;
+}
+
+.header-time__span-time {
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.header-time {
+    margin-left: -30px;
+}
+
+.header-problem {
+    padding-left: 25px;
+}
+
+.header-problem__link-dont-call {
+    color: #f7bb03;
+}
+
+.header-login__image-avatar {
+    width: 15px;
+}
+
+.header-login {
+    color: #777;
+    font-weight: 500;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.header-login > a {
+    padding: 0 10px;
+}
+
+.header-login__link-singin {
+    color: #000;
+}
+
+.header-login__link-reg {
+    color: #a1a1a1;
+}
+
+.header-logo__image-logo {
+    width: 300px;
+}
+
+.header-search {
+    padding-left: 35px;
+}
+
+.header-search__input-search {
+    width: 425px;
+    line-height: 38px; 
+    padding-left: 45px;
+    border-radius: 20px;
+    font-weight: 300;
+    border: #dcdee4 1px solid;
+    color: #bdbdbd;
+    outline: none;
+    background-image: url(../images/icon/svg/searching.svg);
+    background-repeat: no-repeat;
+    background-size: 50px 15px;
+    background-position: 5px 12px;
+}
+
+.header-options {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.header-options > a {
+    padding: 0 10px;
+}
+
+.header-options > a:hover {
+    font-weight: 500;
+}
+
+.header-options > a:last-child {
+    padding-right: 0;
+}
+
+.header-options__image-favorites,
+.header-options__image-compare,
+.header-options__image-basket {
+    width: 15px;
+    padding-right: 5px;
+}
+
+.header-options__link-favorites,
+.header-options__link-compare,
+.header-options__link-basket {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.header-catalog__button {
+    width: 295px;
+    height: 50px;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #f7bb03;
+    font-weight: 700;
+    padding-left: 40px;
+    background-image: url(../images/icon/svg/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 30px;
+    background-position: 10px 10px;;
+    outline: 0;
+    border: none;
+}
+
+.header-conditions {
+    color: #6b6b6b;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.header-conditions > a {
+    padding: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.header-conditions > a:first-child {
+    padding-left: 0;
+}
+
+.header-conditions > a:last-child {
+    padding-right: 0;
+}
